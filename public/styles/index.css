@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-weight: 100;
 }
 
 
@@ -256,4 +257,3 @@ select {
 .error-message {
   color:red;
 }
-
