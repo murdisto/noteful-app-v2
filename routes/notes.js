@@ -165,7 +165,7 @@ router.delete('/:id', (req, res, next) => {
     .from('notes')
     .where('id', `${id}`)
     .del()
-    
+
     .then(() => {
       res.sendStatus(204);
     })

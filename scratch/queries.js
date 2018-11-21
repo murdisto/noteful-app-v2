@@ -21,7 +21,7 @@ let searchTerm = 'barque';
 //   });
 
 
-let id = 1;
+let id = 2;
 // knex
 //   .select('id', 'title', 'content')
 //   .from('notes')
@@ -33,17 +33,18 @@ let id = 1;
 //     console.error(err);
 //   });
 
-// knex
-//   .from('notes')
-//   .update({title: 'unique', content: 'this is unique content' })
-//   .where('id', `${id}`)
-//   .returning('*')
-//   .then(([note]) => {
-//     console.log(JSON.stringify(note, null, 2));
-//   })
-//   .catch(err => {
-//     console.error(err);
-//   });
+knex
+  .from('notes')
+  .update({title: 'unique', content: 'this is unique content' })
+  .where('id', `${id}`)
+  .returning('*')
+  .then(([note]) => {
+    //console.log(note);
+    console.log(JSON.stringify(note, null, 2));
+  })
+  .catch(err => {
+    console.error(err);
+  });
 
 // let newItem;
 // knex
@@ -60,13 +61,13 @@ let id = 1;
 //   });
 
 
-knex
-  .from('notes')
-  .where('id', 9)
-  .del()
-  .then(result => {
-    console.log(JSON.stringify(result));
-  })
-  .catch(err => {
-    console.error(err);
-  });
+// knex
+//   .from('notes')
+//   .where('id', 9)
+//   .del()
+//   .then(result => {
+//     console.log(JSON.stringify(result));
+//   })
+//   .catch(err => {
+//     console.error(err);
+//   });
