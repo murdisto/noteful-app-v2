@@ -10,12 +10,12 @@ $(document).ready(function () {
       noteful.render();
     });
 
-  console.info('Get folders, coming soon...');
-  // api.search('/api/folders')
-  //   .then(response => {
-  //     store.folders = response;
-  //     noteful.render();
-  //   });
+  //console.info('Get folders, coming soon...');
+  api.search('/api/folders')
+    .then(response => {
+      store.folders = response;
+      noteful.render();
+    });
 
   console.info('Get tags, coming soon...');
   // api.search('/api/tags')
@@ -25,4 +25,3 @@ $(document).ready(function () {
   //   });
 
 });
-

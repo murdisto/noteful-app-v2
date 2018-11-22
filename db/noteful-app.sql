@@ -30,7 +30,7 @@ CREATE TABLE notes (
 
 INSERT INTO notes (title, content, folder_id)
   VALUES ('5 life lessons learned from cats', 'Broadside lugger sloop jack crimp. Jack Tar squiffy fluke lass jib. Hulk chandler topsail parley strike colors.', 100),
-  ('What the government doesn''t want you to know about cats', 'Bounty fore case shot spanker hearties. Furl overhaul driver cog hands. Spike brigantine six pounders snow starboard.', 101),
-  ('The most boring article about cats you''ll ever read', 'Warp to go on account booty code of conduct dead men tell no tales.', 102),
-  ('9 things lady gaga has in common with cats', '', 103)
+  ('What the government doesn''t want you to know about cats', 'Bounty fore case shot spanker hearties. Furl overhaul driver cog hands. Spike brigantine six pounders snow starboard.', 100),
+  ('The most boring article about cats you''ll ever read', 'Warp to go on account booty code of conduct dead men tell no tales.', 100),
+  ('9 things lady gaga has in common with cats', '', 101)
   RETURNING id, title;
